@@ -19,14 +19,15 @@ def main():
     
     os.chdir(args.name)
     
-    for x in files:
-        Path(x).touch()
+    for file in files:
+        fd = os.open(file, os.O_CREAT, 644) 
+        os.close(fd)
 
     os.makedirs("src/"+args.name)
     os.mkdir("tests")
     os.mkdir("data")
-    Path("src/"+args.name+"/__init__.py").touch()
-    os.chmod("src/"+args.name+"/__init__.py", 755)
+    os.open("src/"+args.name+"/__init__.py", os.O_CREAT, 755)
+    os.close(fd)
     os.chmod("setup.py", 755)
 
 if __name__ == "__main__":
