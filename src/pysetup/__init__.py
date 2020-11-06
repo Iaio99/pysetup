@@ -20,7 +20,7 @@ def main():
     os.chdir(args.name)
     
     for file in files:
-        fd = os.open(file, os.O_CREAT, 644) 
+        fd = os.open(file, os.O_CREAT, 0o644) 
         os.close(fd)
 
     os.makedirs("src/"+args.name)
