@@ -7,11 +7,11 @@ with open("README.md", "r") as fh:
 
 setup (
         name = 'pippo',
-        version = '0.0.1a',
+        version = '0.0.1',
         author = 'Scorpion',
         author_email = 'glnvlln0@gmail.com',
         description = 'A simple program for setup new packages in python',
-        long_descrption = long_description,
+        long_description = long_description,
         package_dir = {'': 'src'},
         packages = find_packages(where='src'),
         entry_points={
