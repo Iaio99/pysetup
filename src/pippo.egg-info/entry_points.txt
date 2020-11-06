@@ -1,3 +1,0 @@
-[console_scripts]
-pysetup = pysetup:main
-

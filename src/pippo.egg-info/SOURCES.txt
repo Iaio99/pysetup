@@ -1,9 +1,0 @@
-README.md
-setup.cfg
-setup.py
-src/pippo.egg-info/PKG-INFO
-src/pippo.egg-info/SOURCES.txt
-src/pippo.egg-info/dependency_links.txt
-src/pippo.egg-info/entry_points.txt
-src/pippo.egg-info/top_level.txt
-src/pysetup/__init__.py
