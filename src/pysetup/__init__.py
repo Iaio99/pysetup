@@ -26,9 +26,9 @@ def main():
     os.makedirs("src/"+args.name)
     os.mkdir("tests")
     os.mkdir("data")
-    os.open("src/"+args.name+"/__init__.py", os.O_CREAT, 755)
+    os.open("src/"+args.name+"/__init__.py", os.O_CREAT, 0o755)
     os.close(fd)
-    os.chmod("setup.py", 755)
+    os.chmod("setup.py", 0o755)
 
 if __name__ == "__main__":
     main()
